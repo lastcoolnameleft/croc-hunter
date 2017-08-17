@@ -25,3 +25,4 @@ ingress:
 pdb:
   enabled: false
   minAvailable: 2
+imagePullSecrets: myregistrykey
