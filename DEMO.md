@@ -71,12 +71,11 @@ kubectl create secret docker-registry croc-hunter-secrets --docker-server=$DOCKE
 # username: admin
 # password: <paste>
 
-If you're not using quay you can configure this to alternate locations in Jenkinsfile.json
+If you're not using ACR you can configure this to alternate locations in Jenkinsfile.json
 # Credentials > Jenkins > Global credentials > Add Credentials
-#   Username: lachie83
+#   Username: admin
 #   Password: ***
-#   ID: quay_creds
-#   Description: https://quay.io/user/lachie83
+#   ID: registry_creds
 
 # Open Blue Ocean
 # Create a new Pipeline

@@ -42,7 +42,7 @@ The following tables lists the configurable parameters of the Spark chart and th
 |       Parameter       |           Description            |                         Default                          |
 |-----------------------|----------------------------------|----------------------------------------------------------|
 | `Name`            | app name                         | `croc-hunter`                                                |
-| `Image`           | Container image name             | `quay.io/lachie83/croc-hunter`                               |
+| `Image`           | Container image name             | `sandboxacr.azurecr.io/sandboxacr/croc-hunter`               |
 | `ImageTag`        | Container image tag              | `latest`                                                     |
 | `ImagePullPolicy` | Container pull policy            | `Always`                                                     |
 | `Replicas`        | k8s deployment replicas          | `3`                                                          |

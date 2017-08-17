@@ -94,10 +94,10 @@ volumes:[
 
       container('docker') {
 
-        // perform docker login to quay as the docker-pipeline-plugin doesn't work with the next auth json format
+        // perform docker login to the container registry as the docker-pipeline-plugin doesn't work with the next auth json format
         withCredentials([[$class          : 'UsernamePasswordMultiBinding', credentialsId: config.container_repo.jenkins_creds_id,
                         usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
-          sh "docker login -u ${env.USERNAME} -p ${env.PASSWORD} quay.io"
+          sh "docker login -u ${env.USERNAME} -p ${env.PASSWORD} sandboxacr.azurecr.io"
         }
 
         // build and publish container
