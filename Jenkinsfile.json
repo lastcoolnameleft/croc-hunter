@@ -9,8 +9,8 @@
   },
   "container_repo": {
     "host": "sandboxacr.azurecr.io",
-    "master_acct": "admin",
-    "alt_acct": "admin",
+    "master_acct": "sandboxacr",
+    "alt_acct": "sandboxacr",
     "jenkins_creds_id": "registry_creds",
     "repo": "croc-hunter",
     "dockeremail": ".",
